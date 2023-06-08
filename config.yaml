@@ -1,0 +1,15 @@
+merchants: 10
+consumers: 10
+banks: 10
+average_favorite_merchants_per_user: 3
+transactions:
+  start_date: "2023-01-01"
+  simulation_days: 30
+  average_transactions_per_day: 100000
+fuzzer:
+  dropout_fields:
+    - "amount"
+    - "merchant_id"
+    - "label"
+    - "bank_id"
+  dropout_probability: 0.1
